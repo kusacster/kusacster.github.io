@@ -1,6 +1,42 @@
-<!DOVTYPE html>
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kusacster 的窝</title>
-  </head>
+    <style>
+        @keyframes fuxian{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        @keyframes fuxian_left{
+            0%{
+                opacity: 0;
+                margin-left: -60px;
+            }
+            100%{
+                opacity: 1;
+                margin-left: -10px;
+            }
+        }
+        .leftboard {
+            margin: -10px;
+            animation: fuxian_left 2s;
+            border-color: lightblue;
+        }
+        .logo {
+            background-color:lightblue;
+        }
+    </style>
+</head>
+<body>
+    <table class="leftboard" border="1" cellpadding="0px" cellspacing="0px">
+        <tr><td class="logo" height=50><a href="https://kusacster.github.io"><img src="https://cdn.luogu.com.cn/upload/image_hosting/ffg91rrt.png" height="50"></a></td></tr>
+    </table>
+</body>
 </html>
