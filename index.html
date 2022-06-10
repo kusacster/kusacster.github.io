@@ -7,58 +7,99 @@
     <link rel="icon" href="https://cdn.luogu.com.cn/upload/image_hosting/ffg91rrt.png" type="image/x-icon"/>
     <title>kusacster 的窝</title>
     <style>
-        @keyframes fuxian{
+        @keyframes xiaoshi{
             0%{
-                opacity: 0;
+                opacity: 1;
+                margin-left: 10px;
             }
             100%{
-                opacity: 1;
+                opacity: 0;
+                margin-left: -20px;
             }
         }
         @keyframes fuxian_left{
             0%{
                 opacity: 0;
-                margin-left: -60px;
+                margin-left: -20px;
             }
             100%{
                 opacity: 1;
-                margin-left: -10px;
+                margin-left: 10px;
             }
         }
         body{
-            background-image: url(https://cdn.luogu.com.cn/upload/image_hosting/toggyjk3.png);
-            background-size: 1600px 800px;
+            /*background-image: url(https://cdn.luogu.com.cn/upload/image_hosting/toggyjk3.png);
+            background-size: 1600px 800px;*/
+            background-color:#FFFFFF;
             background-position-x: 0px;
         }
         .leftboard {
-            border-top-left-radius:0px;
+            /*border-top-left-radius:0px;
             border-top-right-radius:30px;
             border-bottom-right-radius:30px;
             border-bottom-left-radius:0px;
-            margin-top:200px;
-            margin-left: -10px;
-            animation: fuxian_left 2s;
+            */
+            width: 70px;
+            height: 350px;
+            margin-top:30px;
+            margin-left: 10px;
+            animation: fuxian_left 1s;
             border-color: #FFFFFF;
+            background-color: #B44444;
+            border-radius: 60px;
+            animation: xiaoshi 1s;
+            opacity: 0;
+            margin-left: -20px;
+            transition: all 500ms;
+        }
+        .leftboard:hover{
+            /*transform: scale(1.05);*/
+            opacity: 1;
+            margin-left: 10px;
+            height: 370px;
+            box-shadow: 2px 2px 7px gray;
         }
         .logo {
-            background-color:#DF4B4B;
+            border-radius: 60px;
+            background-color:#A33333;
         }
         .lfbd{
-            background-color:#FFFFFF;
+            background-color:#B44444;
+        }
+        .lastleft{
+            background-color:#B44444;
+            border-bottom-left-radius: 60px;
+            border-bottom-right-radius: 60px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .topboard{
+            margin-top: -10px;
+            margin-left: -10px;
+            height: 150px;
+            width: 1602px;
+            background-image: url("https://s4.ax1x.com/2022/02/02/HkbS0K.jpg");
         }
     </style>
 </head>
 <body>
-    <table class="leftboard" cellpadding="0px" cellspacing="0px" id="lefthome">
-        <tr><td class="logo" height=70 align="center"><a href="https://kusacster.github.io"><img src="https://cdn.luogu.com.cn/upload/image_hosting/ffg91rrt.png" height="50"></a></td></tr>
-        <tr><td class="lfbd" height=50 align="center"><a href="https://dpkajj.blog.luogu.org/"><font color="DF4B4B">博客</font></a></td></tr>
-        <tr><td class="lfbd" height=50 align="center"><a href="https://www.luogu.com.cn/user/515930"><font color="DF4B4B">洛谷<br>主页</font></a></td></tr>
-        <tr><td class="lfbd" height=50 align="center"><a href="https://www.luogu.com.cn/paste/1djc6wlf"><font color="DF4B4B">好东西</font></a></td></tr>
+    <!--顶栏-->
+    <table class="topboard">
     </table>
-    <style type="text/css">
+    <table class="leftboard" cellpadding="0px" cellspacing="0px" id="lefthome">
+        <tr><td class="logo" height=50 align="center"><a href="https://kusacster.github.io"><img src="https://cdn.luogu.com.cn/upload/image_hosting/ffg91rrt.png" height="45px"></a></td></tr>
+        <tr><td class="lfbd" height=50 align="center"><a href="https://dpkajj.blog.luogu.org/"><font color="#FFFFFF"><small>洛谷博客</small></font></a></td></tr>
+        <tr><td class="lfbd" height=50 align="center"><a href="https://www.luogu.com.cn/user/515930"><font color="#FFFFFF"><small>洛谷主页</small></font></a></td></tr>
+        <tr><td class="lfbd" height=50 align="center"><a href="https://www.luogu.com.cn/paste/1djc6wlf"><font color="#FFFFFF"><small>一些东西</small></font></a></td></tr>
+        <tr><td class="lastleft" height=50 align="center"><font color="#FFFFFF"><strong>&lt;</strong></font></a></td></tr>
+        <!-- < &lt > &gt <= &le >= ge-->
+    </table>
+    <!--<style type="text/css">
         #lefthome td{
             border-color: #FFFFFF;
         }
     </style>
+-->
 </body>
 </html>
